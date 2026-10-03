@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Afterglow | Archive</title>
+<meta name="description" content="Afterglow is a journal about technology, design and the near future.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<canvas id="sky" aria-hidden="true"></canvas>
+<header>
+  <a class="logo" href="index.html"><i class="orb"></i>Afterglow</a>
+  <nav id="nav"><a href="index.html">Home</a><a href="journal.html">Journal</a><a href="archive.html">Archive</a><a href="authors.html">Authors</a><a href="about.html">About</a><button class="tg" id="tg" aria-label="Switch light or dark theme">&#9680;</button></nav>
+</header>
+<main class="wrap">
+<section>
+  <div class="ph"><h2>The archive</h2><p>Every essay in one table. Select a column heading to sort, or a row to read.</p></div>
+  <div class="tw"><table id="tA"><thead><tr><th data-k="t">Title</th><th data-k="c">Topic</th><th data-k="m">Minutes</th><th data-k="v">Reads</th><th data-k="d">Published</th></tr></thead><tbody></tbody></table></div>
+</section>
+</main>
+<footer>Afterglow &middot; written slowly, published weekly</footer>
+<dialog id="dlg"><button class="x" id="cl" aria-label="Close essay">&#10005;</button><article class="art" id="art"></article></dialog>
+<script src="app.js"></script>
+</body>
+</html>

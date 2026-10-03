@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Afterglow | Contact</title>
+<meta name="description" content="Afterglow is a journal about technology, design and the near future.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<canvas id="sky" aria-hidden="true"></canvas>
+<header>
+  <a class="logo" href="index.html"><i class="orb"></i>Afterglow</a>
+  <nav id="nav"><a href="index.html">Home</a><a href="journal.html">Journal</a><a href="archive.html">Archive</a><a href="authors.html">Authors</a><a href="about.html">About</a><a href="contact.html">Contact</a><button class="tg" id="tg" aria-label="Switch light or dark theme">&#9680;</button></nav>
+</header>
+<main class="wrap">
+<section>
+  <div class="ph"><h2>Contact us</h2><p>Questions, story ideas or feedback? Send a message and we will reply within two days.</p></div>
+  <div class="cgrid">
+    <form class="cform" id="cf" novalidate>
+      <label for="cn">Your name</label>
+      <input id="cn" type="text" autocomplete="name" placeholder="Saishwari">
+      <label for="ce">Your email</label>
+      <input id="ce" type="email" autocomplete="email" placeholder="you@example.com">
+      <label for="ct">What is this about?</label>
+      <select id="ct"><option>Feedback</option><option>Story idea</option><option>Collaboration</option><option>Other</option></select>
+      <label for="cm">Message</label>
+      <textarea id="cm" rows="5" placeholder="Write your message here"></textarea>
+      <p id="cerr" role="alert" class="cerr"></p>
+      <button class="cta" type="submit">Send message</button>
+      <p id="cok" role="status" class="cok"></p>
+    </form>
+    <aside class="cinfo">
+      <h3>Other ways to reach us</h3>
+      <p>Email: hello@afterglow.example</p>
+      <p>Replies: within two days</p>
+      <p>Newsletter: every Sunday</p>
+    </aside>
+  </div>
+  <div class="ph" style="padding-top:40px"><h2>Messages received</h2><p>Messages sent from this browser appear here, so you can see the form working. They are stored only on your device.</p></div>
+  <div class="tw"><table id="tM"><thead><tr><th>Name</th><th>Topic</th><th>Message</th><th>Time</th></tr></thead><tbody></tbody></table></div>
+  <button class="chip" id="clr" style="margin-bottom:60px">Clear messages</button>
+</section>
+</main>
+<footer>Afterglow &middot; written slowly, published weekly</footer>
+<dialog id="dlg"><button class="x" id="cl" aria-label="Close essay">&#10005;</button><article class="art" id="art"></article></dialog>
+<script src="app.js"></script>
+</body>
+</html>
